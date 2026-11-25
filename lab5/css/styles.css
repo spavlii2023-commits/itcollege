@@ -1,0 +1,154 @@
+
+html {
+  font-size: 62.5%; /* 1rem = 10px, як на lpnu.ua */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #fff;
+  color: #333;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;      /* 16px */
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.42857143;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #0076A8;
+  text-decoration: none;
+  transition: color 0.5s ease-out;
+}
+
+a:visited {
+  color: #0076A8;
+  text-decoration: none;
+  transition: color 0.5s ease-out;
+}
+
+a:hover {
+  color: #00A1E4;
+  text-decoration: none;
+  transition: color 0.5s ease-out;
+}
+
+a:active {
+  color: #00A1E4;
+  text-decoration: none;
+  transition: color 0.5s ease-out;
+}
+
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container::before,
+.container::after {
+  display: table;
+  content: " ";
+}
+
+.container::after {
+  clear: both;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.row::before,
+.row::after {
+  display: table;
+  content: " ";
+}
+
+.row::after {
+  clear: both;
+}
+
+.col-xs-4 {
+  position: relative;
+  float: left;
+  width: 33.33333333%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.clearfix::before,
+.clearfix::after {
+  display: table;
+  content: " ";
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+
+#logos_container {
+  padding: 0.75rem 0; /* 7.5px зверху і знизу */
+}
+
+#logos_container a {
+  text-align: center;
+}
+
+#logos_container img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  /* display: block, max-width: 100%, height: auto — з .img-responsive */
+}
+
+@media only screen and (min-width: 992px) {
+  #logos_container {
+    padding: 1rem 0; /* 10px зверху і знизу */
+  }
+
+  #logos_container img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 175px;
+  }
+}
+

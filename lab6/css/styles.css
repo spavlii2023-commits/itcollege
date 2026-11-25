@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 95px;
+}
+
+header {
+    text-align: center;
+    background: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+section {
+    padding: 20px;
+}
+
+h2 {
+    position: sticky;
+    top: 0;
+    background: #f9f9f9;
+    padding: 10px 0;
+    margin: 0;
+    z-index: 10;
+    border-bottom: 1px solid #ddd;
+}
+
+
+#section-1 img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 300px;
+}
+
+.text {
+    text-align: justify;
+}
+
+.clear {
+    clear: both;
+}
+
+
+.multicolumn-text {
+    column-width: 300px;
+    column-gap: 20px;
+}
+
+
+#subscribe-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#subscribe-button:hover {
+    background-color: #45a049;
+}
+
+
+.modal-overlay {
+  display: none; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.modal-content {
+  background-color: #ffffff;
+  padding: 25px 30px;
+  border-radius: 4px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 550px;
+}
+
+
+#emailForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+#emailForm label {
+  font-size: 14px;
+  color: #333;
+}
+
+.form-row {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.form-row input[type="email"] {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #7c7c7c;
+  outline: none;
+  font-size: 14px;
+}
+
+
+.btn-save {
+  background-color: #32a852; 
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-save:hover {
+  background-color: #288742;    
+}
+
+
+.btn-subscribe {
+  background-color: #32a852;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+
+.content-block {
+  overflow: hidden; 
+  margin-bottom: 20px;
+}
+
+
+#section-1 .text {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+
+#section-1 .clear {
+  clear: both;
+}

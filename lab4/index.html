@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Форма студентської картки</title>
+</head>
+
+<body>
+    <header>
+        <h1>Форма студентської картки</h1>
+    </header>
+    <form method="post">
+    <section>
+        <h2>Персональна інформація</h2>
+        
+            <fieldset>
+                <Legend>Надайте свою інформацію</Legend>
+                <label>Повне Ім'я, Прізвище: <input type="text" name="fullname" placeholder="Enter your Full name"></label>
+                <p><label>Email: <input type="email" name="email" placeholder="Enter email"></label></p>
+                <p><label>Пароль: <input type="password" name="password" placeholder="Enter a password"></label></p>
+                <p><label>Ваш вік: <input type="number" name="age" placeholder=""></label></p>
+                <p><label>Дата народження: <input type="date" name="date" placeholder=""></label></p>
+                <p><label>Стать: </label></p>
+                <p><label><input type="radio" value="Male">Чоловік</label></p>
+                <p><label><input type="radio" value="Female">Жінка</label></p>
+                <p><label><input type="radio" value="Other">Інше</label></p>
+                <p><label>Мови які знаєте:</label></p>
+                <p><label><input type="checkbox" name="Languages Known">English</label></p>
+                <p><label><input type="checkbox" name="Languages Known">French</label></p>
+                <p><label><input type="checkbox" name="Languages Known">Spanish</label></p>
+                <p><label>Ваша країна: <select>
+                            <option value="">Виберіть вашу країну</option>
+                            <option value="">Україна</option>
+                        </select></label></p>
+            </fieldset>
+    </section>
+    <section>
+        <h2>
+            Предмети коледжу
+        </h2>
+        <fieldset>
+            <legend>Виберіть ваші навчальні предмети</legend>
+            <p><label>Виберіть вашу пару:</label></p>
+            <p><select multiple>
+                    <option value="Computer Science">Комп'ютерні науки</option>
+                    <option value="Math">Математика</option>
+                    <option value="Physics">Фізика</option>
+                    <option value="Chemistry">Хімія</option>
+                </select></p>
+            <p><label>Оцініть свій інтерес до Комп'ютерної науки: <input type="range" name="rating"></label></p>
+        </fieldset>
+    </section>
+    <section>
+        <h2>
+            Навички
+        </h2>
+        <fieldset>
+            <legend>Assess your skills</legend>
+            <p>Розкажіть про свої навички:</p>
+            <p><label><textarea>List your skills here...</textarea></label></p>
+            <p><label>Надішліть ваше резюме тут: <input type="file" name="resume"></label></p>
+            <p><label>Виберіть ваш улюблений колір: <input type="color"></label></p>
+            <p><label>Виберіть хороший для вас час навчання: <input type="time"></label></p>
+            <p><label><input type="submit" name="Submit Survey" placeholder="Submit Survey"></label></p>
+        </fieldset>
+    </section>
+        </form>
+    <section>
+        <p>&copy; Картка студента by Pavlii Stanislav. All rights are reserved.</p>
+    </section>
+</body>
+
+</html>
